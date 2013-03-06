@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE struts PUBLIC   
+  "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+  "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	
+	<package name="system_query" extends="json-default">
+		<action name="cplquery"
+			class="edu.sdu.online.rengepeiyang.actions.QueryAction" method="getCPL">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="query11"
+			class="edu.sdu.online.rengepeiyang.actions.QueryAction" method="get11">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="querysuyang"
+			class="edu.sdu.online.rengepeiyang.actions.QueryAction" method="getSuyang">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="query24"
+			class="edu.sdu.online.rengepeiyang.actions.QueryAction" method="get24">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="history"
+			class="edu.sdu.online.rengepeiyang.actions.HistoryQueryAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="singelquery"
+			class="edu.sdu.online.rengepeiyang.actions.SingelQueryAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="getstudents"
+			class="edu.sdu.online.rengepeiyang.actions.TeacherAction" method="getStudents">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>   

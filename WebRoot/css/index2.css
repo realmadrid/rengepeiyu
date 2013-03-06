@@ -1,0 +1,29 @@
+﻿body{background:white;}
+*{margin:0;padding:0;}
+a{text-decoration:none;color:black;}
+#head{width:1003px;height:125px;background:url(../images/query/head.png);margin:auto;}
+#tittle{width:1003px;height:74px;background:url(../images/query/tittle.png);margin:0 auto;}
+#mainbody{width:1003px;height:701px;background:#e50010;margin:0 auto;}
+/*左栏下拉菜单*/
+#side_bar{width:175px;height:650px;padding:51px 43px 0 110px;float:left;}
+/*.tab5{width:176px;height:38px;margin:3px 0px;padding:0;background:url(../images/query/tab5.png);display:block;}*/
+#u1 li{width:176px;height:28px;margin:3px 0px;text-align:center;padding-top:20px; list-style-type:none;}
+.b{width:176px;height:28px;background:url(../images/query/tab.png) no-repeat;border:0px;cursor:pointer;}
+#a{width:176px;height:23px;background:url(../images/query/tab.png) no-repeat;border:0px;font-size:13px;padding-top:5px;}
+#u2{padding-top:0px;}
+#u2 li{width:144px;height:28px;display:block;list-style-type:none;}
+#a1{width:145px;height:23px;background:url(../images/query/tab2.png) no-repeat;border:0px;font-size:13px;padding-top:5px;}
+.tab1{width:136px;height:28px;background:url(../images/query/tab1.png) no-repeat;font:13px;}
+/*右栏内容*/
+#content{width:584px;height:650px;padding:51px 91px 0 0;float:right;}
+#memu{width:623px;height:41px;}
+.tab3{width:94px;height:41px;background:url(../images/query/tab3.png);margin:0;float:left;}
+.tab4{width:170px;height:41px;background:url(../images/query/tab4.png);margin:0 0 0 8px;float:left;border:0px;padding-left:2px;}
+.tab5{width:103px;height:41px;background:url(../images/query/tab5.png);margin:0 0 0 8px;float:left;border:0px;}
+.tab6{width:172px;height:41px;background:url(../images/query/tab4.png);margin:0 0 0 8px;float:left;border:0px;}
+#memu select{margin-top:15px;margin-left:5px;font:34px;line-height:37px;background:#f9d8d1;border=none;}
+#grade{width:94px;}
+#depid{width:158px;}
+#tid{width:94px;}
+#clazz{width:94px;}
+#container{width:605px;height:auto;background:#f9d8d1;margin:0 91px 47px 0;border:1px solid #f85f57;}

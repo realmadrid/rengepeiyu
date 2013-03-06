@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="getexcel" extends="struts-default">
+		<action name="toExcel" class="edu.sdu.online.rengepeiyang.actions.ToExcelAction" method="getTheExcel">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename=${fileName}</param>
+				<param name="inputName">downloadStream</param>
+			</result>
+		</action>
+		<action name="allcpl" class="edu.sdu.online.rengepeiyang.actions.AllAction" method="allcpl">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename=${fileName}</param>
+				<param name="inputName">downloadStream</param>
+			</result>
+		</action>
+		<action name="all11" class="edu.sdu.online.rengepeiyang.actions.AllAction" method="all11">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename=${fileName}</param>
+				<param name="inputName">downloadStream</param>
+			</result>
+		</action>
+		<action name="allsuyang" class="edu.sdu.online.rengepeiyang.actions.AllAction" method="allsuyang">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename=${fileName}</param>
+				<param name="inputName">downloadStream</param>
+			</result>
+		</action>
+		<action name="all24" class="edu.sdu.online.rengepeiyang.actions.AllAction" method="all24">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename=${fileName}</param>
+				<param name="inputName">downloadStream</param>
+			</result>
+		</action>
+		</package>
+		</struts> 
+	

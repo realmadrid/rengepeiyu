@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="rengepeiyang" location="0,0" size="0,0">
+    <action name="login" location="0,0" size="0,0">
+      <result name="student_home" />
+      <result name="teachersuccess" />
+      <result name="depusersuccess" />
+      <result name="sysusersuccess" />
+      <result name="error" />
+      <result name="input" />
+      <result name="jihuo" />
+    </action>
+    <action name="logout" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="profile" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="input" />
+      <result name="error" />
+      <result name="login" />
+    </action>
+    <action name="select_answer" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+      <result name="input" />
+      <result name="login" />
+    </action>
+    <action name="question_table" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="load_answer" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+      <result name="login" />
+    </action>
+    <action name="load_answer_modify" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+      <result name="login" />
+    </action>
+    <action name="answer_modify" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+      <result name="login" />
+    </action>
+    <action name="student_load_for_reg" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+      <result name="login" />
+    </action>
+    <action name="student_load" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+    </action>
+    <action name="student_load_for_modify" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+      <result name="login" />
+    </action>
+    <action name="student_reg" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+    </action>
+    <action name="student_search" location="0,0" size="0,0">
+      <result name="success" />
+      <result name="error" />
+    </action>
+    <action name="student_modify" location="0,0" size="0,0">
+      <result name="sysusersuccess" />
+      <result name="studentsuccess" />
+      <result name="error" />
+    </action>
+    <action name="getData1" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+</Struts2Diagram>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="myaction" extends="struts-default">
+		<action name="system_load" class="edu.sdu.online.rengepeiyang.actions.SystemAction" >
+			<result name="success">/sysmanager/system.jsp</result>
+		</action>
+		<action name="depuser_load" class="edu.sdu.online.rengepeiyang.actions.SystemAction" >
+			<result name="success">/depuser/testDepuser.jsp</result>
+		</action>
+		<action name="teacher_load" class="edu.sdu.online.rengepeiyang.actions.SystemAction" >
+			<result name="success">/teacher/testTeacher.jsp</result>
+		</action>
+		</package>
+		</struts> 
+	

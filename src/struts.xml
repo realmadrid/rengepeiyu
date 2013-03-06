@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<include file="struts-json.xml" />
+	<include file="struts-redirect.xml" />
+	<include file="struts-excel.xml" />
+	<package name="rengepeiyang" extends="struts-default">
+		<interceptors>
+			<interceptor name="loginIntercepter"
+				class="edu.sdu.online.rengepeiyang.utils.LoginIntecepter" />
+		</interceptors>
+		<action name="login" class="edu.sdu.online.rengepeiyang.actions.LoginAction"
+			method="login">
+			<result name="student_home" type="redirect">profile?student.sid=${username}
+			</result>
+			<result name="teachersuccess" type="redirect">teacher_load</result>
+			<result name="depusersuccess" type="redirect">depuser_load</result>
+			<result name="sysusersuccess" type="redirect">system_load</result>
+			<result name="error">/error.jsp</result>
+			<result name="input">/error.jsp</result>
+			<result name="jihuo" type="redirect">student_load_for_reg?student.sid=${username}
+			</result>
+		</action>
+		<action name="logout" class="edu.sdu.online.rengepeiyang.actions.LoginAction"
+			method="logout">
+			<result>/success.jsp</result>
+		</action>
+		<action name="profile"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="profile">
+			<result name="success">/student/studentindex.jsp</result>
+			<result name="input">/error.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+		<action name="select_answer"
+			class="edu.sdu.online.rengepeiyang.actions.QuestionAction" method="selectAnswer">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="input">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+		<action name="question_table"
+			class="edu.sdu.online.rengepeiyang.actions.QuestionAction" method="loadeQuestion">
+			<result name="success">/student/selectpage.jsp</result>
+		</action>
+		<action name="load_answer"
+			class="edu.sdu.online.rengepeiyang.actions.QuestionAction" method="loadAnswer">
+			<result name="success">/student/result_show.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+		<action name="load_answer_modify"
+			class="edu.sdu.online.rengepeiyang.actions.QuestionAction" method="loadAnswer">
+			<result name="success">/student/result_show.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+		<action name="answer_modify"
+			class="edu.sdu.online.rengepeiyang.actions.QuestionAction" method="modifyAnswer">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+
+		<action name="student_load_for_reg"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="loadStudent">
+			<result name="success">/student/jihuo.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+		<action name="student_load"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="loadStudent">
+			<result name="success">/student/studentinfo_show.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="student_load_for_modify"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="loadStudent">
+			<result name="success">/sysmanager/student_modify.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login">/preindex.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="loginIntercepter" />
+		</action>
+		<action name="student_reg"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="studentReg">
+			<result name="success">/preindex.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="student_search"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="studentSearch">
+			<result name="success">/student/studentlist.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="student_modify"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="modifyStudent">
+			<result name="sysusersuccess">/sysmanager/systemuserindex.jsp</result>
+			<result name="studentsuccess" type="redirect">profile?student.sid=${sid}
+			</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<!-- 数据统计功能 -->
+		<action name="getData1"
+			class="edu.sdu.online.rengepeiyang.actions.StudentAction" method="getXMLData1">
+			<result name="success">/FCCharts/result_show1.jsp</result>
+		</action>
+	</package>
+</struts> 

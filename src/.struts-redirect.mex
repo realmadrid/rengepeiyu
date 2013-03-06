@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="myaction" location="236,10" size="280,420">
+    <action name="system_load" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="system.jsp" />
+      </result>
+    </action>
+    <action name="depuser_load" location="65,232" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="testDepuser.jsp" />
+      </result>
+    </action>
+    <action name="teacher_load" location="65,337" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teacherindex.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="system.jsp" path="/sysmanager/system.jsp" location="14,30" size="150,55" />
+  <webResource name="testDepuser.jsp" path="/depuser/testDepuser.jsp" location="10,205" size="150,55" />
+  <webResource name="teacherindex.jsp" path="/teacher/teacherindex.jsp" location="570,310" size="150,55" />
+</Struts2Diagram>
+

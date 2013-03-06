@@ -1,0 +1,9 @@
+* {margin:0; padding:0; border:0;}
+p{font:normal 14px "微软雅黑","宋体";color:white;padding-top:40px;}
+.right{float:right;}
+#container {width:100%;min-width:1024px; width:expression(document.body.clientWidth <1024? "1024px": "100%" );text-align:center!important;}
+#bg{height:613px;width:1003px;background:url(../images/index/register_bg.png) no-repeat;margin:20px auto;margin-bottom:0px;position:relative;}
+#pos{margin:40px 100px;font:15px "微软雅黑","宋体";color:white;margin:0 auto;padding-top:150px;}
+.w1{width:120px;text-align:right;}
+.w2{width:200px;text-align:left;padding-left:10px}
+#submit{height:44px;width:89px;background:url(../images/index/submit.png) no-repeat left top;position:absolute;left:687px;top:567px;cursor:pointer;}

@@ -1,0 +1,31 @@
+* {margin:0; padding:0; border:0;}
+a {text-decoration:none; color:#fdd298; cursor:pointer;font:18px "微软雅黑","宋体";display:block;}
+a:hover{color:white;}
+.left{float:left;}
+#container {width:100%;min-width:1024px; margin:0 auto;width:expression(document.body.clientWidth <1024? "1024px": "100%" );text-align:center!important;}
+#title{height:123px;width:1003px;background:#cd0210 url(../images/index/title2.png) no-repeat;margin:0 auto;}
+#body{height:500px;width:977px;margin:10px;background:#cd0210;margin:0 auto;padding:10px 13px;padding-bottom:80px;}
+#body_l{height:523px;width:253px;background:#f7dcb8 url(../images/index/bg1.gif) no-repeat left top;}
+#a_s{height:24px;width:1003px;margin-top:0;text-align:right;padding-right:20px;float:right;}
+#a_s a {color:#white;text-decoration:underline;}
+#body_c{height:523px;width:695px;background:#f7dcb8 url(../images/index/bg2.gif) no-repeat left top;}
+#body_r{height:523px;width:23px;background:white url(../images/index/bg4.gif) no-repeat left top;}
+#body_b{height:21px;width:971px;background:white url(../images/index/bg3.png) no-repeat left top;}
+#s1{height:40px;width:204px;background:white url(../images/index/s1.png) no-repeat left top;margin-top:64px;margin-left:17px;+margin-left:-14px;padding-top:10px;}
+#s2{height:40px;width:204px;background:white url(../images/index/s1.png) no-repeat left top;margin-top:30px;margin-left:17px;+margin-left:-14px;padding-top:10px;}
+#s3{height:40px;width:204px;background:white url(../images/index/s1.png) no-repeat left top;margin-top:27px;margin-left:17px;+margin-left:-14px;padding-top:10px;}
+#s4{height:40px;width:204px;background:white url(../images/index/s1.png) no-repeat left top;margin-top:32px;margin-left:17px;+margin-left:-14px;padding-top:10px;}
+#content{width:627px;height:502px;margin:21px 85px;text-align:left;}
+/*data��css*/
+p{font:normal 24px "微软雅黑","宋体";color:#cd0210;padding-top:40px;padding-left:30px;}
+#pos{margin:40px 20px;font:15px "微软雅黑","宋体";color:#cd0210;}
+.w1{width:120px;text-align:right;}
+.w2{width:200px;text-align:left;}
+
+/*24�������css*/
+#text{width:627px;+width:610px;height:502px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;text-align:left;}
+#t_text{width:615px;height:25px;}
+#submit{height:54px;width:114px;background:#f7dcb8 url(../images/index/submit1.png) no-repeat left top;margin-top:20px;cursor;pointer;}
+/*���Խ���css*/
+.p_pos{margin-top:70px;}
+
